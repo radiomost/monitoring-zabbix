@@ -120,7 +120,6 @@ The default URL for Zabbix UI when using Apache web server is http://host/zabbix
 3. Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
 4. Приложите в файл README.md текст использованных команд в GitHub
 
-```
 ## Решение:
 
 ## 1. Cкриншот раздела Configuration > Hosts, где видно, что агенты node-1, node-2, node-4 подключены к серверу
