@@ -17,8 +17,10 @@
 
 ## Решение
 
+Вход в админку
 ![Вход в админку](https://github.com/radiomost/sys-pattern-homework/blob/main/img/lesson_1_1.png)
 
+Главный дашборд
 ![Главный дашборд](https://github.com/radiomost/sys-pattern-homework/blob/main/img/lesson_1_2.png)
 
 Для установки Zabbix Servera, Zabbix Web Server, PostgresQL я использовал Ubuntu 22.04 jammy
@@ -123,7 +125,7 @@ The default URL for Zabbix UI when using Apache web server is http://host/zabbix
 ## Решение:
 
 ### 1. Cкриншот раздела Configuration > Hosts, где видно, что агенты node-1, node-2, node-4 подключены к серверу
-
+Агенты подключенные к серверу 
 ![Агенты подключенные к серверу ](https://github.com/radiomost/sys-pattern-homework/blob/main/img/task_2_1.png)
 
 ### 2. Cкриншоты логов zabbix agent node-2, где видно, что он работает с сервером
@@ -132,16 +134,19 @@ The default URL for Zabbix UI when using Apache web server is http://host/zabbix
 journalctl -u zabbix-agent -e
 ```
 
+journalctl node-2
 ![journalctl node-2](https://github.com/radiomost/sys-pattern-homework/blob/main/img/task_2_3.png)
 
 ```bash
 sudo cat /var/log/zabbix-agent/zabbix_agentd.log
 ```
 
+zabbix_agentd.log node-2 
 ![zabbix_agentd.log node-2 ](https://github.com/radiomost/sys-pattern-homework/blob/main/img/task_2_4.png)
 
 ### 3. Cкриншот раздела Monitoring > Latest data для трех хостов, где видны поступающие от агентов данные.
 
+Monitoring > Latest data для нод
 ![Monitoring > Latest data для нод](https://github.com/radiomost/sys-pattern-homework/blob/main/img/task_2_2.png)
 
 ### 4. текст использованных команд
@@ -189,6 +194,7 @@ sudo systemctl status zabbix-agent.service
 
 ## Решение
 
+Свободное место на диске C. Обведено маркером
 ![Свободное место на диске C. Обведено маркером](https://github.com/radiomost/sys-pattern-homework/blob/main/img/task_3_1.png)
 
 ### Критерии оценки
